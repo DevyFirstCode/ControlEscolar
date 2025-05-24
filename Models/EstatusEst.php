@@ -1,6 +1,10 @@
 <?php
 include_once __DIR__ . "/ConexionBd.php";
-
+/*
+    Creado por: Nombre del estudiante
+    Fecha: 2023-10-01
+    Semestre: 4
+*/
 class EstatusEst
 {
     public $EstatusEstId;
