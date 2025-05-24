@@ -34,4 +34,14 @@ class ConexionBd
     {
         return $this->con;
     }
+
+    public function ejecutarConsulta($sql)
+    {
+        $resultado = $this->con->query($sql);
+        if ($resultado === false) {
+            die("Error en la consulta: " . $this->con->error);
+        }
+        return $resultado;
+    }
+
 }
